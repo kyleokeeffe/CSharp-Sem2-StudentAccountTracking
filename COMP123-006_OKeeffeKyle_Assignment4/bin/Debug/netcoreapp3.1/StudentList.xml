@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <FName>Kyle</FName>
+    <LName>Smith</LName>
+    <StudentID>1001</StudentID>
+  </Student>
+  <Student>
+    <FName>Joe</FName>
+    <LName>McConel</LName>
+    <StudentID>10301</StudentID>
+  </Student>
+  <Student>
+    <FName>Steve</FName>
+    <LName>Bryson</LName>
+    <StudentID>1345</StudentID>
+  </Student>
+  <Student>
+    <FName>John</FName>
+    <LName>Smith</LName>
+    <StudentID>1234</StudentID>
+  </Student>
+  <Student>
+    <FName>jim</FName>
+    <LName>guy</LName>
+    <StudentID>1234</StudentID>
+  </Student>
+</ArrayOfStudent>>
+</ArrayOfStudent>

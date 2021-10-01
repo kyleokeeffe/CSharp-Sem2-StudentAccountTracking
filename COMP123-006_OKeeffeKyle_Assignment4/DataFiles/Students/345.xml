@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FName>adsf</FName>
+  <LName>adf</LName>
+  <StudentID>345</StudentID>
+  <CurrentSem>4</CurrentSem>
+  <StudentSems>
+    <Semester>
+      <SemNumber>1</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+    <Semester>
+      <SemNumber>2</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+    <Semester>
+      <SemNumber>3</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+    <Semester>
+      <SemNumber>4</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+  </StudentSems>
+</Student>

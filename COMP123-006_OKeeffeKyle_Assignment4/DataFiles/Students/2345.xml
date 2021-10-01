@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FName>Kyle</FName>
+  <LName>Smith</LName>
+  <StudentID>2345</StudentID>
+  <CurrentSem>3</CurrentSem>
+  <StudentSems>
+    <Semester>
+      <SemNumber>1</SemNumber>
+      <CourseRecords>
+        <CourseRecord>
+          <StudentID>2345</StudentID>
+          <SemNumber>1</SemNumber>
+          <CourseName>History</CourseName>
+          <CreditHours>0.5</CreditHours>
+          <Grade>87</Grade>
+          <CourseGPA>3.3</CourseGPA>
+        </CourseRecord>
+        <CourseRecord>
+          <StudentID>2345</StudentID>
+          <SemNumber>1</SemNumber>
+          <CourseName>Science</CourseName>
+          <CreditHours>0.5</CreditHours>
+          <Grade>62</Grade>
+          <CourseGPA>0.7</CourseGPA>
+        </CourseRecord>
+        <CourseRecord>
+          <StudentID>2345</StudentID>
+          <SemNumber>1</SemNumber>
+          <CourseName>Art</CourseName>
+          <CreditHours>0.5</CreditHours>
+          <Grade>74</Grade>
+          <CourseGPA>2</CourseGPA>
+        </CourseRecord>
+        <CourseRecord>
+          <StudentID>2345</StudentID>
+          <SemNumber>1</SemNumber>
+          <CourseName>Physics</CourseName>
+          <CreditHours>0.5</CreditHours>
+          <Grade>92</Grade>
+          <CourseGPA>3.7</CourseGPA>
+        </CourseRecord>
+      </CourseRecords>
+      <GPA>2.425</GPA>
+    </Semester>
+    <Semester>
+      <SemNumber>2</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+    <Semester>
+      <SemNumber>3</SemNumber>
+      <CourseRecords />
+      <GPA>0</GPA>
+    </Semester>
+  </StudentSems>
+</Student>

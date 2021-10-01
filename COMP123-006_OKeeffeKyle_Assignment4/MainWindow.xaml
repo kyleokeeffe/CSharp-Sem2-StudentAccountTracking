@@ -1,0 +1,116 @@
+﻿<Window x:Class="COMP123_006_OKeeffeKyle_Assignment4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:COMP123_006_OKeeffeKyle_Assignment4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Name="CourseAddSection" Grid.Column="0">
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal">
+                    <Label>Student:</Label>
+                    <Label Name="lblStudentNameCourses"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Semester#:</Label>
+                    <Label Name="lblSemNumberCourses"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Semester GPA:</Label>
+                    <Label Name="lblGPACourses"></Label>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Name="pnlAllAddCourse">
+                <Button Name="btnAddCourse" Content="Add Course to Semester" Width="150" Margin="10 0 10 0"/>
+                <StackPanel Name="pnlNewCourse" Visibility="Collapsed" >
+                    <StackPanel Orientation="Horizontal" Margin="20 10 20 10" HorizontalAlignment="Center">
+                        <StackPanel Width="50" Margin="10">
+                            <Label>Course Name</Label>
+                            <TextBox Name="txtCourseName"/>
+                        </StackPanel>
+                        <StackPanel Width="50" Margin="10">
+                            <Label>Credit Hours</Label>
+                            <TextBox Name="txtCreditHours"/>
+                        </StackPanel>
+                        <StackPanel Width="50" Margin="10">
+                            <Label>Grade</Label>
+                            <TextBox Name="txtGrade"/>
+                        </StackPanel>
+                        <Button Name="btnCancelAddCourse" Content="Cancel" Height="20" Width="100" Margin="10 0 10 0"/>
+                    </StackPanel>
+                    <Button Name="btnSubmitCourse" Visibility="Visible" Content="Submit Course" Width="100"/>
+                </StackPanel>
+                <DataGrid Name="dataCourses" Height="200" Margin="20"></DataGrid>
+            </StackPanel>
+            <Button Name="btnAdvancedOptions" Content="Advanced" Width="70"></Button>
+            <Button Name="btnHideAdvanced" Content="Hide Advanced" Width="70" Visibility="Collapsed"></Button>
+            <StackPanel Name ="pnlAdvancedOptions" Margin="10" Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="btnSubmitByCourse" Margin="10" Width="100" Content="By Course Stats"></Button>
+                    <ComboBox Name="cmbxCourseNames" Width="120" Margin="10"></ComboBox>
+                </StackPanel>
+                <Button Name="btngetAllCourseStats" HorizontalAlignment="Left" Margin="10" Content="All Course Stats" Width="100"></Button>
+                <StackPanel Name="pnlSingleCourse" Visibility="Collapsed">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Course:"></Label>
+                        <Label Name="lblAdvCourseName"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Average:"></Label>
+                        <Label Name="lblAdvCourseAvg"></Label>
+                    </StackPanel>
+                </StackPanel>
+                <DataGrid Height="100" Name="dataByCourse" Visibility="Collapsed">
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label Content="Please select your account or click below to create a new account."/>
+            <Label Margin="20 0 0 0">Student Accounts:</Label>
+            <DataGrid MinHeight="20" Margin="20 0 20 5" Name="dataStudents" Height="100">
+            </DataGrid>
+            <Button Name="btnNewStudent" Content="Add New Student" Width="100" Margin="10"/>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed" x:Name="hideNewStudent">
+                <StackPanel>
+                    <Label Content="First Name"/>
+                    <TextBox Name="txtFName" Width="50"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Last Name"/>
+                    <TextBox Name="txtLName" Width="50"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Student ID"/>
+                    <TextBox Name="txtStudentID" Width="50"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Sem# Completed"/>
+                    <TextBox Name="txtCurrentSem" Width="50"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="btnSubmitNewStudent" Content="Submit" VerticalAlignment="Center" Height="20"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Visibility="Collapsed" x:Name="hideSemButton">
+                <StackPanel Orientation="Horizontal">
+                    <Label Margin="20 0 0 0">Semesters for Student:</Label>
+                    <Label Margin="20 0 0 0" Name="lblStudentNameSems">---</Label>
+                </StackPanel>
+                <DataGrid MinHeight="20" Margin="20 0 20 5" Name="dataSems" Height="100">
+                </DataGrid>
+                <Button Name="btnNewSem" Content="Add New Sem" Width="100" Margin="10" />
+                <StackPanel Orientation="Horizontal" Visibility="Collapsed" x:Name="hideSemAdd">
+                    <Label>Which semester would you like to add?:</Label>
+                    <TextBox Name="txtSemToAdd" Width="50" Margin="10"/>
+                    <Button Name="btnSubmitSem" Margin="10"  Width="50" Content="Submit Semester"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
